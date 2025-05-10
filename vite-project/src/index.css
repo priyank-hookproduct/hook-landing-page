@@ -1,0 +1,239 @@
+* {
+  font-family: 'Poppins' !important;
+}
+  
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.navbar-text-content {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  font-weight: 600 !important;
+  font-size: 1.1em !important;
+  text-decoration: none !important;
+}
+
+.navlink {
+  text-decoration: none;
+  color: white;
+}
+
+.logo-navbar {
+  max-width: 160px;
+}
+
+#product-addtocart {
+  color: black !important;
+  background-color: #ffe6d6 !important;
+  border-color: #ffe6d6 !important;
+  font-weight: 600;
+}
+
+#product-addtocart:hover {
+  background-color: #e5cdc0 !important;
+  border-color: #e5cdc0 !important;
+}
+
+.btn-primary {
+  color: white !important; 
+  background-color: rgba(254, 144, 73, 1) !important;
+  border-color: rgba(254, 144, 73, 1) !important;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #cc5200 !important;
+  border-color: #cc5200 !important;
+}
+
+#signup-submit {
+  width:fit-content;
+}
+
+.google-button {
+  width: 100;
+}
+
+.form-check-input:checked {
+  background-color: #ff6600 !important;
+  border-color: #ff6600 !important;
+}
+
+.product-sideimages{
+  height: 50px;
+  border-radius: 5px;
+}
+
+.product-mainimage{
+  max-height:100%;
+  max-width:100%;
+}
+
+.logo-footer {
+  max-width: 100px;
+  margin-bottom: 5px;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.lines {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+}
+
+.line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 55px;
+  height: 8px;
+  background: white;
+  transform-origin: 0% 50%;
+  opacity: 0.8;
+}
+
+.angle0   { transform: rotate(0deg) translateX(310px); }
+.angle30  { transform: rotate(30deg) translateX(310px); }
+.angle60  { transform: rotate(60deg) translateX(310px); }
+.angle90  { transform: rotate(90deg) translateX(310px); }
+.angle120 { transform: rotate(120deg) translateX(310px); }
+.angle150 { transform: rotate(150deg) translateX(310px); }
+.angle180 { transform: rotate(180deg) translateX(310px); }
+.angle210 { transform: rotate(210deg) translateX(310px); }
+.angle240 { transform: rotate(240deg) translateX(310px); }
+.angle270 { transform: rotate(270deg) translateX(310px); }
+.angle300 { transform: rotate(300deg) translateX(310px); }
+.angle330 { transform: rotate(330deg) translateX(310px); }
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.right-line, .left-line {
+  position: absolute;
+  height: 5px;
+  background: white;
+  top: 50%;
+  left: 50%;
+  transform-origin: left center;
+  opacity: 0.8;
+}
+
+.right-line {
+  width: 250px;
+  transform: translate(0%, -50%) rotate(45deg);
+}
+
+.left-line {
+  width: 120px;
+  transform: translate(0%, -50%) rotate(-45deg);
+}
+
+.second-hand {
+  animation: rotateClockwise 20s linear infinite;
+}
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  pointer-events: none;
+  z-index: 2; /* must be higher than .arrow (which is z-index: 1) */
+}
+
+.center-text h1 {
+  z-index: 2; /* must be higher than .arrow (which is z-index: 1) */
+}
+
+@keyframes rotateClockwise {
+  0%   { transform: translate(0%, -50%) rotate(0deg); }
+  100% { transform: translate(0%, -50%) rotate(360deg); }
+}
+
+@media (max-width: 800px) {
+  .lines {
+    width: 200px;
+    height: 200px;
+  }
+
+  .line {
+    width: 35px;
+    height: 6px;
+  }
+
+  .angle0   { transform: rotate(0deg) translateX(200px); }
+  .angle30  { transform: rotate(30deg) translateX(200px); }
+  .angle60  { transform: rotate(60deg) translateX(200px); }
+  .angle90  { transform: rotate(90deg) translateX(200px); }
+  .angle120 { transform: rotate(120deg) translateX(200px); }
+  .angle150 { transform: rotate(150deg) translateX(200px); }
+  .angle180 { transform: rotate(180deg) translateX(200px); }
+  .angle210 { transform: rotate(210deg) translateX(200px); }
+  .angle240 { transform: rotate(240deg) translateX(200px); }
+  .angle270 { transform: rotate(270deg) translateX(200px); }
+  .angle300 { transform: rotate(300deg) translateX(200px); }
+  .angle330 { transform: rotate(330deg) translateX(200px); }
+
+  .right-line {
+    width: 140px;
+  }
+
+  .left-line {
+    width: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .lines {
+    width: 200px;
+    height: 200px;
+  }
+
+  .line {
+    width: 35px;
+    height: 6px;
+  }
+
+  .angle0   { transform: rotate(0deg) translateX(155px); }
+  .angle30  { transform: rotate(30deg) translateX(155px); }
+  .angle60  { transform: rotate(60deg) translateX(155px); }
+  .angle90  { transform: rotate(90deg) translateX(155px); }
+  .angle120 { transform: rotate(120deg) translateX(155px); }
+  .angle150 { transform: rotate(150deg) translateX(155px); }
+  .angle180 { transform: rotate(180deg) translateX(155px); }
+  .angle210 { transform: rotate(210deg) translateX(155px); }
+  .angle240 { transform: rotate(240deg) translateX(155px); }
+  .angle270 { transform: rotate(270deg) translateX(155px); }
+  .angle300 { transform: rotate(300deg) translateX(155px); }
+  .angle330 { transform: rotate(330deg) translateX(155px); }
+
+  .right-line {
+    width: 140px;
+  }
+
+  .left-line {
+    width: 70px;
+  }
+}
+
