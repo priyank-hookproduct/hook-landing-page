@@ -81,15 +81,26 @@ export const Homepage = () => {
             </video> */}
 
             {/* Overlay to darken background */}
+            {/* <Box
+                sx={{
+                    position: 'fixed',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7))',
+                    zIndex: -1,
+                }}
+            /> */}
             <Box
                 sx={{
-                position: 'fixed',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-                bgcolor: 'rgba(0, 0, 0, 0.4)',
-                zIndex: -1,
+                    position: 'fixed',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    bgcolor: 'rgba(0, 0, 0, 0.5)',
+                    zIndex: -1,
                 }}
             />
 
