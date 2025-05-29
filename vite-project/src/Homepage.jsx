@@ -5,7 +5,8 @@ import { NavLink, useNavigate } from 'react-router-dom'
 // import bgVideo from "./assets/videoBg.mp4"
 import logoBlank from "./assets/LogoBlank.png"
 // import backgroundImage from "./assets/bg.png" 
-import backgroundImage from "./assets/004.webp"
+// import backgroundImage from "./assets/004.webp"
+import backgroundImage from "./assets/bg3.jpg"
 
 import XIcon from '@mui/icons-material/X';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -187,7 +188,6 @@ export const Homepage = () => {
                         variant="h2"
                         sx={{
                         mb: 4,
-                        fontSize: { xs: '1.8rem', sm: '2.2rem', md: '2.5rem' },
                         }}
                     >
                         About Us
